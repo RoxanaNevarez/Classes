@@ -1,5 +1,6 @@
 % Modified from RR_roots.m Code (Corresponding Author: Thomas Bewley)to solve homework problem
 %Call command in command window '>>RR_roots(poly)'
+%Code was executed using Octave
 clear;
 pkg load symbolic;
 %P = a2
