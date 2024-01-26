@@ -58,4 +58,4 @@ denG=denG(end:-1:1)
 %b0 = -b*sig*x_b
 
 %Final ODE:
-%a3[(d^3)(y')/dt^3] + a2[(d^2)(y')/dt^2] + a1[d(y')/dt] + a0[y'] = b1[u'] + b0
+%a3[(d^3)(y')/dt^3] + a2[(d^2)(y')/dt^2] + a1[d(y')/dt] + a0[y'] = b1[d(u')/dt] + b0[u']
