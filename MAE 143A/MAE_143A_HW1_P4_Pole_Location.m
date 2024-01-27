@@ -4,12 +4,15 @@ denG = [1,  b - sig + 1 , -b*sig + b + sig*z_b - sig + (x_b)^2  , sig*(b*z_b - b
 
 %For equilibrium point 1 {x_bar, y_bar, z_bar} = {sqrt(47), sqrt(47), -1}
 %subs(denG, {b,sig,x_b,y_b,z_b}, {1,4,sqrt(47),sqrt(47),-1});
+%roots = [1, 6, 52, 376]
 
 %For equilibrium point 2 {x_bar, y_bar, z_bar} = {-sqrt(47), -sqrt(47), -1}
 %subs(denG, {b,sig,x_b,y_b,z_b}, {1,4,-sqrt(47),-sqrt(47),-1});
+%roots = [1, 6, 52, 376]
 
 %For equilibrium point 3 {x_bar, y_bar, z_bar} = {0, 0, -48}
 %subs(denG, {b,sig,x_b,y_b,z_b}, {1,4,0,0,-48});
+%roots = [1, 6, -183, -188]
 
 %General Procedures to Solve Problem 4 after finding roots using
 %RR_roots(denG)
