@@ -17,7 +17,7 @@ pause;
 %y_bar = y_b
 %b = b
 syms s sig z_b x_b y_b b
-G=subs(sol.y/u,{L1,L2,L3,L4,L5,L6,L7,L8,L9},{s - sig, - sig, z_b, s + 1, x_b, - y_b, - x_b, s + b, - b})
+G=subs(sol.y/u,{L1,L2,L3,L4,L5,L6,L7,L8,L9},{s + sig, - sig, z_b, s + 1, x_b, - y_b, - x_b, s + b, - b})
 [numG,denG] = numden(G);      % this extracts out the num and den of G
 numG=coeffs(numG,s);          % this extracts the powers of s in the num and den
 denG=coeffs(denG,s);
@@ -51,11 +51,11 @@ denG=denG(end:-1:1)
 %  [                                                  2       /               2          \]
 %  [1,  b - sig + 1 , -b*sig + b + sig*z_b - sig + x_b  , sig*\b*z_b - b - x_b  + x_b*y_b/]
 %a3=1
-%a2 = b - sig + 1
-%a1 = -b*sig + b + sig*z_b - sig + x_b^2
-%a0 = sig*(b*z_b - b - x_b^2 + x_b*y_b)
+%a2 = b + sig + 1
+%a1 = b*sig + b + sig*z_b + sig + x_b^2
+%a0 = sig*(b*z_b + b + x_b^2 + x_b*y_b)
 %b1 = b*x_b
-%b0 = -b*sig*x_b
+%b0 = b*sig*x_b
 
 %Final ODE:
 %a3[(d^3)(y')/dt^3] + a2[(d^2)(y')/dt^2] + a1[d(y')/dt] + a0[y'] = b1[d(u')/dt] + b0[u']
