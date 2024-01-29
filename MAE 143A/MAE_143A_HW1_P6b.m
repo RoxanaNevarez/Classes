@@ -32,6 +32,8 @@ d4 = (-b0)/(p1*p2*p3);
 
 t = 0:0.1:10;
 plot(t,d1*exp(p1*t)+d2*exp(p2*t)+d3*exp(p3*t)+d4); %plots equation 2
-legend('y(t) for equilibrium point 1','y(t) for equilibrium point 2'); 
 hold on;
+
+legend('y(t) for equilibrium point 1','y(t) for equilibrium point 2'); 
+
 
