@@ -23,6 +23,8 @@ clear, close all;
 syms s
 F1 = tf([1], [1 2 2 1]);
 F1z = c2d(F1, 0.2, 'tustin');
+%F1z.numerator prints coefficients to inputs u_(k-i)
+%F1z.denominator prints coefficients to outputs y_(k-i)
 %polynomials in denominator
 p1 = (10*(z-1))^3;
 p2 = 2*(10*(z-1))^2*(z+1);
