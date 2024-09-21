@@ -110,7 +110,7 @@ legend('VinT', 'VoutT');
 hold off
 
 %Copy and paste lines 113-135 to see the 2x2 grid for problem 2 of Lab 5.
-image = imread('C:\Users\Roxana Nevarez\Pictures\Seattle.jpg');
+image = imread("C:\Users\Roxan\OneDrive\Pictures & Videos\Earth.jpg");
 grayImage = rgb2gray(image);
 width = size(image,2);
 length = size(image,1);
