@@ -1,2 +1,2 @@
-# Classes
-Any code written for homework assignments will be categorized here.
+# School Assignments
+Any code written for homework assignments or as practice for exams are included here
